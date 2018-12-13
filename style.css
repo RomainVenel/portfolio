@@ -24,6 +24,10 @@ section{
   min-height: 800px;
 }
 
+ul li{
+    list-style:none
+}
+
 #home-page{
   background-color: rgb(33,37,41);
 }
@@ -32,6 +36,9 @@ section{
 }
 #compt-page{
   background-color: #0000001a;
+}
+#parcours-page{
+  background-color: #fff;
 }
 
 #title-home{
@@ -162,6 +169,11 @@ section{
 
 .margin-top-80 {
   margin-top: 80px;
+}
+
+#img-pres {
+  margin-top: -40px;
+  border-radius: 5px;
 }
 
 .pres-text {
@@ -297,7 +309,6 @@ section{
   #img-pres {
     width: 250px;
     height: 280px;
-    margin-top: -40px;
   }
   .pres-text {
     font-size: 16px;
@@ -315,7 +326,6 @@ section{
   #img-pres {
     width: 220px;
     height: 250px;
-    margin-top: -40px;
   }
   .pres-text {
     font-size: 15px;
@@ -333,7 +343,6 @@ section{
   #img-pres {
     width: 190px;
     height: 210px;
-    margin-top: -40px;
   }
   .pres-text {
     font-size: 13px;
@@ -386,7 +395,6 @@ section{
   #img-pres {
     width: 300px;
     height: 360px;
-    margin-top: -40px;
   }
   .pres-text {
     font-size: 17px;
@@ -454,4 +462,14 @@ section{
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+.block-parcours-img{
+  text-align: center;
+  white-space: nowrap;
+}
+
+.block-parcours-img img{
+  height: 300px;
+  vertical-align: middle;
 }
