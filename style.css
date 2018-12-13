@@ -309,7 +309,8 @@ section{
     text-align: center;
   }
   .pie-wrapper{
-    font-size: 65px;
+    font-size: 62px;
+    margin-left: -4px;
   }
   .title-compt {
     font-size: 10px;
