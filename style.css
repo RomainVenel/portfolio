@@ -100,11 +100,20 @@ section{
 
 .mobile-menu{
   display: none;
-  background: rgb(33,37,41,1);
 }
 
 .classic-menu{
   margin-top: -17px;
+}
+
+.mobile-menu .nav-item {
+  background-color: rgb(33,37,41,0.6);
+  border-radius: 50px;
+}
+
+.mobile-menu .nav-item:hover{
+  background-color: #895E93;
+  cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
