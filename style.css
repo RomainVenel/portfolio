@@ -21,7 +21,7 @@ section{
   position: relative;
   height: 100%;
   margin: auto;
-  min-height: 700px;
+  min-height: 800px;
 }
 
 #home-page{
@@ -278,6 +278,14 @@ section{
   color: #179321;
 }
 
+.fa-apple {
+  color: grey;
+}
+
+.fa-windows {
+  color: rgb(106, 164, 226);
+}
+
 @media screen and (min-width: 515px) and (max-width: 770px) {
   #home-page h1{
     font-size: 65px;
@@ -285,6 +293,14 @@ section{
   }
   #home-page h2{
     font-size: 29px;
+  }
+  #img-pres {
+    width: 250px;
+    height: 280px;
+    margin-top: -40px;
+  }
+  .pres-text {
+    font-size: 16px;
   }
 }
 
@@ -296,6 +312,14 @@ section{
   #home-page h2{
     font-size: 23px;
   }
+  #img-pres {
+    width: 220px;
+    height: 250px;
+    margin-top: -40px;
+  }
+  .pres-text {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -305,6 +329,14 @@ section{
   }
   #home-page h2{
     font-size: 20px;
+  }
+  #img-pres {
+    width: 190px;
+    height: 210px;
+    margin-top: -40px;
+  }
+  .pres-text {
+    font-size: 13px;
   }
 }
 
@@ -335,14 +367,29 @@ section{
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  .pie-wrapper{
+    font-size: 80px;
+    margin-left: -4px;
+  }
+  .title-compt {
+    font-size: 16px;
+    margin-top: 78px;
+  }
+  .list-icons .fab {
+    font-size: 62px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -2px;
+    transition: transform .5s;
+  }
   #img-pres {
-    width: 200px;
-    height: 220px;
+    width: 300px;
+    height: 360px;
     margin-top: -40px;
   }
   .pres-text {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 
