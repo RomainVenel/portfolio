@@ -25,7 +25,7 @@ section{
 }
 
 ul li{
-    list-style:none
+  list-style:none
 }
 
 #home-page{
@@ -156,7 +156,7 @@ ul li{
   color: #363942;
   border-top: 2px solid #ea9312;
   margin: auto;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .icons-title{
@@ -171,8 +171,12 @@ ul li{
   margin-top: 80px;
 }
 
+.block-flex {
+  display: flex;
+  align-items: center;
+}
+
 #img-pres {
-  margin-top: -40px;
   border-radius: 5px;
 }
 
@@ -360,19 +364,22 @@ ul li{
     text-align: center;
   }
   .pie-wrapper{
-    font-size: 62px;
+    font-size: 90px;
     margin-left: -4px;
   }
   .title-compt {
-    font-size: 10px;
-    margin-top: 67px;
+    font-size: 17px;
+    margin-top: 90px;
   }
   .list-icons .fab {
     font-size: 45px;
     margin-right: 20px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: -20px;
     transition: transform .5s;
+  }
+  #compt-page .margin-top-80 {
+    margin-top: 10px;
   }
 }
 
@@ -398,6 +405,15 @@ ul li{
   }
   .pres-text {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .block-flex {
+    display: block;
+  }
+  .parcours-img {
+    display: none;
   }
 }
 
@@ -464,12 +480,49 @@ ul li{
   }
 }
 
-.block-parcours-img{
+.parcours-img {
   text-align: center;
-  white-space: nowrap;
+  margin-top: 110px;
 }
 
-.block-parcours-img img{
+.parcours-img img {
   height: 300px;
-  vertical-align: middle;
+}
+
+.parcours-year {
+  letter-spacing: 1px;
+  font-family: "Roboto Condensed",Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.parcours-subject {
+  letter-spacing: 1px;
+  font-family: "Roboto Condensed",Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.parcours-school {
+  letter-spacing: 1px;
+  font-family: "Spicy",Sans-Serif;
+  color: #000;
+  text-align: center;
+}
+
+.tag {
+  text-align: center;
+  padding: 0 11px;
+  border-radius: 22px;
+  line-height: 22px;
+  margin: 2px 145px 0;
+  color: #6284c5;
+  font-size: 12px;
+  background-color: #e7edf6;
+}
+
+.list-parcours li {
+  background-color: aliceblue;
 }
