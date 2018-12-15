@@ -28,7 +28,11 @@ ul li{
   list-style:none
 }
 
-#parcours-page ul {
+a {
+  color: black !important;
+}
+
+#parcours-page ul{
   margin-left: -40px;
 }
 
@@ -47,6 +51,10 @@ ul li{
 
 #projets-page {
   background-color: #e7f4ff;
+}
+
+#contact-page {
+  background-color: #b1c7db;
 }
 
 #title-home{
@@ -330,7 +338,7 @@ ul li{
     font-size: 16px;
   }
   .div-hover{
-    height: 85 !important;
+    height: 85px !important;
     width: 180px !important;
   }
 }
@@ -351,8 +359,16 @@ ul li{
     font-size: 15px;
   }
   .div-hover{
-    height: 85 !important;
+    height: 85px !important;
     width: 180px !important;
+    margin-left: -20px !important;
+  }
+  .parcours-subject {
+    font-size: 15px !important;
+  }
+  .hover-img {
+    width: 80% !important;
+    height: 80% !important;
   }
 }
 
@@ -373,6 +389,18 @@ ul li{
   }
   .tag {
     margin: 2px 0 0 !important;
+  }
+  .parcours-subject {
+    font-size: 15px !important;
+  }
+  .div-hover{
+    height: 85px !important;
+    width: 180px !important;
+    margin-left: -20px !important;
+  }
+  .hover-img {
+    width: 80% !important;
+    height: 80% !important;
   }
 }
 
@@ -636,4 +664,104 @@ hr.separator-list:after {
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
   margin-top: -133px;
+}
+
+article a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  transition: all 0.5s ease;
+  margin: auto;
+}
+
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook-f {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.google {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.whatsapp {
+  border: 5px solid #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-whatsapp {
+  color: #4dc247;
+  text-shadow: 0 0 15px #4dc247;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 640px){
+  .wrapper {
+    width: 350px;
+  }
+  .wrapper ul li{
+    margin-top: 10px;
+  }
+  .wrapper ul li.google{
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .wrapper {
+    width: 150px;
+  }
+  .wrapper ul li{
+    margin:15px;
+  }
+  .wrapper ul li.google{
+    margin-left: 15px;
+  }
 }
