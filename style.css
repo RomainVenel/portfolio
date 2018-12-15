@@ -28,7 +28,7 @@ ul li{
   list-style:none
 }
 
-ul {
+#parcours-page ul {
   margin-left: -40px;
 }
 
@@ -43,6 +43,10 @@ ul {
 }
 #parcours-page{
   background-color: #fff;
+}
+
+#projets-page {
+  background-color: #e7f4ff;
 }
 
 #title-home{
@@ -82,7 +86,7 @@ ul {
   border: 2px solid white;
   margin-right: 15px;
   margin-left: 15px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -173,6 +177,10 @@ ul {
 
 .margin-top-80 {
   margin-top: 80px;
+}
+
+.margin-top-60 {
+  margin-top: 60px;
 }
 
 .block-flex {
@@ -284,8 +292,8 @@ ul {
 }
 
 .list-icons .fab:hover{
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
   transform: scale(1.5); 
   cursor: pointer;
 }
@@ -321,6 +329,10 @@ ul {
   .pres-text {
     font-size: 16px;
   }
+  .div-hover{
+    height: 85 !important;
+    width: 180px !important;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 515px) {
@@ -338,8 +350,9 @@ ul {
   .pres-text {
     font-size: 15px;
   }
-  .tag {
-    margin: 2px 100px 0 !important;
+  .div-hover{
+    height: 85 !important;
+    width: 180px !important;
   }
 }
 
@@ -391,6 +404,19 @@ ul {
   #compt-page .margin-top-80 {
     margin-top: 10px;
   }
+  .div-hover{
+    height: 150px !important;
+    width: 200px !important;
+    margin-bottom: 30px !important;
+  }
+  .div-hover img:hover {
+    opacity: 1 !important;
+  }
+  .text-to-show {
+    font-size: 13px !important;
+    opacity: 1 !important;
+    margin-top: 0px !important;
+  }
 }
 
 @media screen and (min-width: 770px) and (max-width: 990px) {
@@ -415,6 +441,13 @@ ul {
   }
   .pres-text {
     font-size: 17px;
+  }
+  .div-hover{
+    height: 170px !important;
+    width: 210px !important;
+  }
+  .text-to-show{
+    margin-top: -110px !important;
   }
 }
 
@@ -570,4 +603,37 @@ hr.separator-list:after {
   -ms-transform: rotate(60deg);
   -o-transform: rotate(60deg);
   transform: rotate(60deg);
+}
+
+.div-center {
+  text-align: center;
+}
+
+.hover-img {
+  height: 100%;
+  width: 100%;
+}
+
+.div-hover{
+  height: 230px;
+  width: 240px;
+  margin: auto;
+}
+
+.div-hover img:hover{
+  opacity: 0.1;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.div-hover:hover .text-to-show{
+  opacity: 1;
+}
+
+.text-to-show{
+  opacity: 0;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: -133px;
 }
