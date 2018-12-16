@@ -9,9 +9,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Raleway,700" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
 	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -31,33 +32,33 @@
 					<a href="#compt-page">Compétences</a>
 				</li>
 				<li class="nav-item">
+					<a href="#passions-page">Passions</a>
+				</li>
+				<li class="nav-item">
 					<a href="#parcours-page">Parcours</a>
 				</li>
 				<li class="nav-item">
 					<a href="#projets-page">Projets</a>
-				</li>
-				<li class="nav-item">
-					<a href="#contact-page">Contact</a>
 				</li>
 			</ul>
 		</div>
 		<div class="mobile-menu">
 			<ul class="nav flex-column">
-				<li class="nav-item">
-					<a href="#pres-page">Accueil</a>
-				</li>
-				<li class="nav-item">
-					<a href="#compt-page">Compétences</a>
-				</li>
-				<li class="nav-item">
-					<a href="#parcours-page">Parcours</a>
-				</li>
-				<li class="nav-item">
-					<a href="#projets-page">Projets</a>
-				</li>
-				<li class="nav-item">
-					<a href="#contact-page">Contact</a>
-				</li>
+				<a href="#pres-page">Accueil
+					<li class="nav-item"></li>
+				</a>
+				<a href="#compt-page">Compétences			
+					<li class="nav-item"></li>
+				</a>
+				<a href="#passions-page">Passions
+					<li class="nav-item"></li>					
+				</a>
+				<a href="#parcours-page">Parcours
+					<li class="nav-item"></li>
+				</a>
+				<a href="#projets-page">Projets
+					<li class="nav-item"></li>
+				</a>
 			</ul>
 		</div>   
 	</header>
@@ -86,11 +87,12 @@
 			<div class="row margin-top-80">
 				<div class="block-flex">
 					<div class="col-lg-6 col-12 center-img">
-						<img id="img-pres" src="https://source.unsplash.com/random/340x400">
+						<img id="img-pres" src=img/profil.jpg>
 					</div>
 					<div class="col-lg-6 col-12 pres-text">
 						<p>Je m'appelle Romain, j'ai 23 ans et je suis actuellement étudiant à l'ECE Tech Paris où je prépare ma licence professionelle sur le développement Web et Mobile. J'alterne entre l'école et mon entreprise "TestWe".</p>
 						<p>Après un bac S, c'est tout naturellement que je me suis dirigé vers l'informatique et plus particulièrement les bases du développement. Les maths m'ont toujours attiré et la rigueur nécessaire dans cette matière m'ont permis d'appréhender plus facilement ce domaine.</p>
+						<p>Je vous laisse découvrir plus en profondeur qui je suis !</p>
 					</div>
 				</div>
 			</div>
@@ -229,240 +231,299 @@
 
 	</section>
 
-	<section id="parcours-page" class="normal-section">
+	<section id="passions-page" class="normal-section">
 		<div class="icons-title">
 			<i class="fas fa-award"></i>
 		</div>
-		<h1>Mon Parcours</h1>
+		<h1>Mes Passions</h1>
 		<hr class="separator">
-		
-		<div class="container margin-top-80">
+
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="parcours-img">
-						<img src=img/books.svg>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="hob-header">
+						<i class="fas fa-volleyball-ball"></i>
+						<span class="hob-title">Le handball</span>
+					</div>
+					<div class="hob-text">
+						Le hand m'a donné une vraie confiance en moi quand j'en avais le plus besoin. Ça me permet de me défouler après une longue journée. J'évolue au poste de gardien et on m'appelle le "Mur Serbe" même si j'ai aucun rapport avec un Serbe.
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
-					<ul>
-						<div class="list-parcours">
-							<li>
-								<div class="row">
-									<div class="col-12">
-										<h4 class="parcours-subject">Licence Pro - Dév Web et Mobile</h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-year tag">2018 - 2019</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-school">ECE Tech - Paris 15</p>
-										<hr class="separator-list">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-12">
-										<h4 class="parcours-subject">Stage de 6 mois</h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-year tag">2017 - 2018</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-school">TestWe - Paris 3</p>
-										<hr class="separator-list">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-12">
-										<h4 class="parcours-subject">BTS SIO option SLAM</h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-year tag">2015 - 2017</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-school">Lycée Louis Armand - Nogent-sur-Marne</p>
-										<hr class="separator-list">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-12">
-										<h4 class="parcours-subject">Licence informatique</h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-year tag">2014-2015</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-school">Paris Diderot - Paris 7</p>
-										<hr class="separator-list">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div class="col-12">
-										<h4 class="parcours-subject">Bac S - Spé Maths</h4>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-year tag">2014</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<p class="parcours-school">Lycée Jules Ferry - Paris 9</p>
-									</div>
-								</div>
-							</li>
-						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="projets-page" class="normal-section">
-		<div class="icons-title">
-			<i class="fas fa-archive"></i>
-		</div>
-		<h1>Mes Projets</h1>
-		<hr class="separator">
-
-		<div class="container margin-top-60">
-			<div class="row">
-				<div class="col-6 col-lg-4 div-center">
-
-					<article>
-						<a href="https://romainvenel.wordpress.com/projet-noirmoutier-codeigniter-premiere-annee/">
-							<div class="div-hover">						
-								<img class="hover-img" src="img/noirmoutier.png" alt="Noirmoutier">
-								<h4 class="text-to-show">Noirmoutier</h4>						
-							</div>
-						</a>
-					</article>
-
-				</div>
-				<div class="col-6 col-lg-4 div-center">
-
-					<article>
-						<a href="https://romainvenel.wordpress.com/2017/05/14/projet-personnel-encadre-symfony/">
-							<div class="div-hover">
-								<img class="hover-img" src="img/gsb.png" alt="GSB">
-								<h4 class="text-to-show">GSB</h4>
-							</div>
-						</a>
-					</article>
-
-				</div>
-				<div class="col-6 col-lg-4 div-center">
-
-					<article>
-						<a href="https://romainvenel.wordpress.com/batiinterim-projet-slam4/">
-							<div class="div-hover">
-								<img class="hover-img" src="img/bati.jpg" alt="Bati">
-								<h4 class="text-to-show">BatiInterim</h4>
-							</div>
-						</a>
-					</article>
-
-				</div>
-				<div class="col-6 col-lg-4 div-center">
-
-					<article>
-						<a href="https://maximegeneviersio.wordpress.com/portfolio/ppe-2e-annee/">
-							<div class="div-hover">
-								<img class="hover-img" src="img/android.jpg" alt="Android">
-								<h4 class="text-to-show">Android</h4>
-							</div>
-						</a>
-					</article>
-
-				</div>
-				<div class="col-6 col-lg-4 div-center">
-
-					<article>
-						<a href="https://romainvenel.wordpress.com/2016/11/25/stickgame-sous-libgdx/">
-							<div class="div-hover">
-								<img class="hover-img" src="img/stickman.png" alt="Libgdx">
-								<h4 class="text-to-show">Libgdx</h4>
-							</div>
-						</a>
-					</article>
-
-				</div>
-				<div class="col-6 col-lg-4 div-center">
-
-					<article>
-						<a href="https://romainvenel.wordpress.com/2016/11/22/snake-multijoueur/">
-							<div class="div-hover">
-								<img class="hover-img" src="img/snake.png" alt="Snake">
-								<h4 class="text-to-show">Snake</h4>
-							</div>
-						</a>
-					</article>
-
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<section id="contact-page" class="normal-section">
-		<div class="icons-title">
-			<i class="far fa-envelope"></i>
-		</div>
-		<h1>Contact</h1>
-		<hr class="separator">
-
-		<div class="wrapper">
-			<ul>
-				<div class="container">
-					<div class="col-12">
-						<div class="row">
-
-							<div class="col-3">
-								<li class="facebook"><i class="fab fa-facebook-f fa-2x"></i></li>
-							</div>
-							<div class="col-3">
-								<li class="twitter"><i class="fab fa-twitter fa-2x"></i></li>
-							</div>
-							<div class="col-3">
-								<li class="google"><i class="fab fa-google fa-2x"></i></i></li>
-							</div>
-							<div class="col-3">
-								<li class="whatsapp"><i class="fab fa-whatsapp fa-2x"></i></li>
-							</div>
-
-						</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="hob-header">
+						<i class="fas fa-music"></i>
+						<span class="hob-title">La musique</span>
+					</div>
+					<div class="hob-text">
+						Après 8 ans de conservatoire, j'ai décidé d'arrêter car je n'en avais plus l'envie et le temps. J'ai pratiqué le basson, un instrument assez méconnu mais génial à jouer. J'espère reprendre un jour...
 					</div>
 				</div>
-			</ul>
-		</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="hob-header">
+						<i class="fas fa-headset"></i>
+						<span class="hob-title">League of Legends</span>
+					</div>
+					<div class="hob-text">
+						C'est le jeu qui m'a suvi ces dernières années et qui me suit toujours. Je joue au poste de jungler et réalise les "calls" avec mon équipe. On a participé à la Lyon Esport de 2017 et je compte bien refaire des lans prochainement.
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="hob-header">
+						<i class="fas fa-volleyball-ball"></i>
+						<span class="hob-title">Le tennis de table</span>
+					</div>
+					<div class="hob-text">
+						Jusqu'à mes 16 ans, j'ai pratiqué le tennis de table à haut niveau. Je voulais même devenir pongiste mais une opération m'a fait perdre espoir. Je suis donc parti vers le hand où je suis complètement épanoui.
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="hob-header">
+						<i class="fas fa-bolt"></i>
+						<span class="hob-title">La trance</span>
+					</div>
+					<div class="hob-text">
+						La trance est un type de musique je dirais à mi-chemin entre l'électro et la house. J'ai découvert la trance à une soirée et depuis j'adore et j'en écoute tout le temps. C'est surtout parfait pour se donner de la motivation.
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<div class="hob-header">
+						<i class="fas fa-film"></i>
+						<span class="hob-title">Les thrillers</span>
+					</div>
+					<div class="hob-text">
+						J'adore les thrillers et en particulier les thrillers psychologique. Pouvoir rentrer dans la tête d'une personne, savoir ce qu'elle pense, ses réactions. Le fonctionnement du cerveau humain, c'est quelque chose qui me fascine.
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="parcours-page" class="normal-section">
+			<div class="icons-title">
+				<i class="fas fa-award"></i>
+			</div>
+			<h1>Mon Parcours</h1>
+			<hr class="separator">
+
+			<div class="container margin-top-80">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="parcours-img">
+							<img src=img/books.svg>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<ul>
+							<div class="list-parcours">
+								<li>
+									<div class="row">
+										<div class="col-12">
+											<h4 class="parcours-subject">Licence Pro - Dév Web et Mobile</h4>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-year tag">2018 - 2019</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-school">ECE Tech - Paris 15</p>
+											<hr class="separator-list">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="col-12">
+											<h4 class="parcours-subject">Stage de 6 mois</h4>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-year tag">2017 - 2018</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-school">TestWe - Paris 3</p>
+											<hr class="separator-list">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="col-12">
+											<h4 class="parcours-subject">BTS SIO option SLAM</h4>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-year tag">2015 - 2017</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-school">Lycée Louis Armand - Nogent-sur-Marne</p>
+											<hr class="separator-list">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="col-12">
+											<h4 class="parcours-subject">Licence informatique</h4>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-year tag">2014-2015</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-school">Paris Diderot - Paris 7</p>
+											<hr class="separator-list">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="col-12">
+											<h4 class="parcours-subject">Bac S - Spé Maths</h4>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-year tag">2014</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="parcours-school">Lycée Jules Ferry - Paris 9</p>
+										</div>
+									</div>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projets-page" class="normal-section">
+			<div class="icons-title">
+				<i class="fas fa-archive"></i>
+			</div>
+			<h1>Mes Projets</h1>
+			<hr class="separator">
+
+			<div class="container margin-top-60">
+				<div class="row">
+					<div class="col-6 col-lg-4 div-center">
+
+						<article>
+							<a href="https://romainvenel.wordpress.com/projet-noirmoutier-codeigniter-premiere-annee/">
+								<div class="div-hover">						
+									<img class="hover-img" src="img/noirmoutier.png" alt="Noirmoutier">
+									<h4 class="text-to-show">Noirmoutier</h4>						
+								</div>
+							</a>
+						</article>
+
+					</div>
+					<div class="col-6 col-lg-4 div-center">
+
+						<article>
+							<a href="https://romainvenel.wordpress.com/2017/05/14/projet-personnel-encadre-symfony/">
+								<div class="div-hover">
+									<img class="hover-img" src="img/gsb.png" alt="GSB">
+									<h4 class="text-to-show">GSB</h4>
+								</div>
+							</a>
+						</article>
+
+					</div>
+					<div class="col-6 col-lg-4 div-center">
+
+						<article>
+							<a href="https://romainvenel.wordpress.com/batiinterim-projet-slam4/">
+								<div class="div-hover">
+									<img class="hover-img" src="img/bati.jpg" alt="Bati">
+									<h4 class="text-to-show">BatiInterim</h4>
+								</div>
+							</a>
+						</article>
+
+					</div>
+					<div class="col-6 col-lg-4 div-center">
+
+						<article>
+							<a href="https://maximegeneviersio.wordpress.com/portfolio/ppe-2e-annee/">
+								<div class="div-hover">
+									<img class="hover-img" src="img/android.jpg" alt="Android">
+									<h4 class="text-to-show">Android</h4>
+								</div>
+							</a>
+						</article>
+
+					</div>
+					<div class="col-6 col-lg-4 div-center">
+
+						<article>
+							<a href="https://romainvenel.wordpress.com/2016/11/25/stickgame-sous-libgdx/">
+								<div class="div-hover">
+									<img class="hover-img" src="img/stickman.png" alt="Libgdx">
+									<h4 class="text-to-show">Libgdx</h4>
+								</div>
+							</a>
+						</article>
+
+					</div>
+					<div class="col-6 col-lg-4 div-center">
+
+						<article>
+							<a href="https://romainvenel.wordpress.com/2016/11/22/snake-multijoueur/">
+								<div class="div-hover">
+									<img class="hover-img" src="img/snake.png" alt="Snake">
+									<h4 class="text-to-show">Snake</h4>
+								</div>
+							</a>
+						</article>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
 
 		<footer>
+			<div class="wrapper">
+				<ul>
+					<div class="container">
+						<div class="col-12">
+							<div class="row">
 
+								<div class="col-3">
+									<li class="facebook"><i class="fab fa-facebook-f fa-2x"></i></li>
+								</div>
+								<div class="col-3">
+									<li class="twitter"><i class="fab fa-twitter fa-2x"></i></li>
+								</div>
+								<div class="col-3">
+									<li class="google"><i class="fab fa-google fa-2x"></i></i></li>
+								</div>
+								<div class="col-3">
+									<li class="whatsapp"><i class="fab fa-whatsapp fa-2x"></i></li>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</ul>
+			</div>
+			<p id="copyright">Copyright ® 2018 Romain Venel</p>
 		</footer>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="script.js"></script>
 	</body>
