@@ -28,9 +28,87 @@ ul li{
   list-style:none
 }
 
-a {
+article a {
   color: black !important;
 }
+
+
+/* Barre de navigation */
+
+.nav-item a{
+  padding: 5px;
+  border: 2px solid white;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.nav-item a{
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  padding: 10px 12px;
+}
+
+.nav-item a:hover{
+  color: #fff;
+  text-decoration: none;
+  background-color: #895E93;
+  cursor: pointer;
+}
+
+.hamburger{
+  cursor: pointer;
+  display: none;
+  margin-left: 30px;
+  margin-top: -19px;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.classic-menu{
+  margin-top: -17px;
+}
+
+.mobile-menu .nav a{
+  background-color: rgb(33,37,41,0.6);
+  text-align: center;
+  border: #fff solid 2px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu .nav a:hover{
+  background-color: #895E93;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Background section */
 
 #parcours-page ul{
   margin-left: -40px;
@@ -39,12 +117,15 @@ a {
 #home-page{
   background-color: rgb(33,37,41);
 }
+
 #pres-page{
   background-color: rgb(132, 132, 132);
 }
+
 #compt-page{
   background-color: #0000001a;
 }
+
 #parcours-page{
   background-color: #fff;
 }
@@ -53,9 +134,11 @@ a {
   background-color: #e7f4ff;
 }
 
-#contact-page {
-  background-color: #b1c7db;
+#passions-page {
+  background-color: #f5f5f5;
 }
+
+/* Section Home */
 
 #title-home{
   text-align: center;
@@ -84,79 +167,6 @@ a {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   margin: auto;
-}
-
-
-
-
-.nav-item{
-  padding: 5px;
-  border: 2px solid white;
-  margin-right: 15px;
-  margin-left: 15px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-
-.nav-item a{
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-}
-
-.nav-item a:hover{
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-item:hover{
-  background-color: #895E93;
-  cursor: pointer;
-}
-
-
-.hamburger{
-  cursor: pointer;
-  display: none;
-  margin-left: 30px;
-  margin-top: -19px;
-}
-
-.mobile-menu{
-  display: none;
-}
-
-.classic-menu{
-  margin-top: -17px;
-}
-
-.mobile-menu .nav-item {
-  background-color: rgb(33,37,41,0.6);
-  border-radius: 50px;
-}
-
-.mobile-menu .nav-item:hover{
-  background-color: #895E93;
-  cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #FFF;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .normal-section h1 {
@@ -198,6 +208,8 @@ a {
 
 #img-pres {
   border-radius: 5px;
+  width: 340px;
+  height: 400px;
 }
 
 .pres-text {
@@ -331,8 +343,8 @@ a {
     font-size: 29px;
   }
   #img-pres {
-    width: 250px;
-    height: 280px;
+    width: 230px;
+    height: 240px;
   }
   .pres-text {
     font-size: 16px;
@@ -340,6 +352,19 @@ a {
   .div-hover{
     height: 85px !important;
     width: 180px !important;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 465px) {
+  #passions-page {
+    min-height: 1025px !important;
+  }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+  #passions-page {
+    min-height: 950px;
   }
 }
 
@@ -352,8 +377,8 @@ a {
     font-size: 23px;
   }
   #img-pres {
-    width: 220px;
-    height: 250px;
+    width: 200px;
+    height: 220px;
   }
   .pres-text {
     font-size: 15px;
@@ -402,6 +427,15 @@ a {
     width: 80% !important;
     height: 80% !important;
   }
+  #passions-page {
+    min-height: 1125px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #pres-page {
+    min-height: 845px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -445,6 +479,18 @@ a {
     opacity: 1 !important;
     margin-top: 0px !important;
   }
+  .hob-header{
+    margin-top: 10px !important;
+  }
+  .hob-text {
+    font-size: 13px !important;
+  }
+  .wrapper ul li {
+    width: 55px !important;
+    height: 55px !important;
+    font-size: 12px;
+    line-height: 55px !important;
+  }
 }
 
 @media screen and (min-width: 770px) and (max-width: 990px) {
@@ -464,8 +510,8 @@ a {
     transition: transform .5s;
   }
   #img-pres {
-    width: 300px;
-    height: 360px;
+    width: 250px;
+    height: 260px;
   }
   .pres-text {
     font-size: 17px;
@@ -476,6 +522,9 @@ a {
   }
   .text-to-show{
     margin-top: -110px !important;
+  }
+  .hob-header{
+    margin-top: 40px !important;
   }
 }
 
@@ -671,6 +720,10 @@ article a:hover {
   text-decoration: none;
 }
 
+.wrapper {
+  margin-top: 20px;
+}
+
 .wrapper ul {
   list-style: none;
   margin-left: -40px;
@@ -688,9 +741,8 @@ article a:hover {
   margin: auto;
 }
 
-.wrapper ul li .fa {
-  color: #D8E2DC;
-  margin-top: 20px;
+.wrapper .fab {
+  color: #fff;
   transition: all 0.5s ease;
 }
 
@@ -742,26 +794,40 @@ article a:hover {
   transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 640px){
-  .wrapper {
-    width: 350px;
-  }
-  .wrapper ul li{
-    margin-top: 10px;
-  }
-  .wrapper ul li.google{
-    margin-left: 60px;
-  }
+.hob-header{
+  text-align: center;
+  font-size: 19px;
+  margin-top: 80px;
 }
 
-@media screen and (max-width: 340px){
-  .wrapper {
-    width: 150px;
-  }
-  .wrapper ul li{
-    margin:15px;
-  }
-  .wrapper ul li.google{
-    margin-left: 15px;
-  }
+.hob-title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.hob-text {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: justify;
+  color: #4d4d4d;
+}
+
+footer {
+  border-top: solid 2px #ea9312;
+  background-color: #333;
+  min-height: 140px;
+}
+
+#copyright {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Condensed",Sans-Serif;
 }
